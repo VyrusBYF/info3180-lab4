@@ -58,7 +58,7 @@ def get_uploaded_images():
         for file in files:
             lst.append(file)
         """print os.path.join(subdir, file)"""
-    return lst 
+    return lst[1:] #The first file is the gitkeep, so we skip it.
 
 
 @app.route('/files')
